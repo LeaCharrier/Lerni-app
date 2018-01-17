@@ -14,24 +14,45 @@ function createCard(helper) {
 
     renderCardContent(helper, function(data) {
         var dataCountry = data.country;
+        var dataCategory = data.category;
+        var dataCategoryColor = data.categoryColor;
         var dataFact = data.fact;
+        var dataImg = data.image;
 
-
-        renderCountry();
+        renderFigure();
         renderFact();
+        renderCountry();
+        renderCategory();
+
+        container.style.borderBottom = dataCategoryColor + ' solid 5px';
+
+        function renderCountry() {
+            var country = helper.generateUniqueElement('span', 'country');
+            country.innerHTML= dataCountry;
+            container.appendChild(country);
+        }
+
+        function renderCategory() {
+            var category = helper.generateUniqueElement('span', 'category');
+            category.style.background = dataCategoryColor;
+            category.innerHTML= dataCategory;
+            container.appendChild(category);
+        }
+
+        function renderFact() {
+            var fact = helper.generateUniqueElement('p', 'fact');
+            fact.innerHTML= dataFact;
+            container.appendChild(fact);
+        }
+
+        function renderFigure() {
+            var img = helper.generateUniqueElement('img', 'card-img');
+            img.setAttribute('src', dataImg);
+            container.appendChild(img);
+        }
+
     });
 
-    function renderCountry() {
-        var country = helper.generateUniqueElement('p', 'country');
-        country.innerHTML= dataCountry;
-        container.appendChild(country);
-    }
-
-   function renderFact() {
-       var fact = helper.generateUniqueElement('p', 'fact');
-       fact.innerHTML= dataFact;
-       container.appendChild(fact);
-   }
 
 }
 
