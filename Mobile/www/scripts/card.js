@@ -82,7 +82,7 @@ function filterData(helper, globalData) {
 
         for(i = 0 ; i < filter.length ; i++) {
             for(j = 0 ; j < globalData.length ; j++) {
-                if(filter[i] === globalData[j].country.toLowerCase()) {
+                if(filter[i] === globalData[j].category.toLowerCase()) {
                     data.push(globalData[j]);
                 }
             }

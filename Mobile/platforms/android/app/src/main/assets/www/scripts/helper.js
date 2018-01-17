@@ -16,7 +16,7 @@ App.Helper.prototype.filterCard = function () {
 
     var filterChecked = [];
 
-    var filter = document.querySelectorAll('.filter li');
+    var filter = document.querySelectorAll('.filter-slide');
 
     for (i = 0 ; i < filter.length; i++) {
         if (filter[i].classList.contains('checked')) {

@@ -14,7 +14,7 @@
       "image": "images/example.jpg",
       "country": "Allemagne",
       "categoryColor": "pink",
-      "category": "Histoire"
+      "category": "Stats"
     },
     {
       "fact": "Donec imperdiet arcu id augue mattis semper. Nam sed porta ex. Proin vulputate, nibh sed congue ornare, justo ipsum iaculis nisl, eu mollis lacus turpis sed tellus. Pellentesque imperdiet ligula ut arcu cursus pretium. Morbi eu arcu nec odio facilisis laoreet facilisis at ex. Nam blandit, eros sit amet vestibulum hendrerit, est lorem pellentesque magna, a dignissim magna nisi dignissim ex. Sed aliquet aliquam turpis non ultrices. Fusce ante purus, pretium eu ante quis, laoreet porttitor massa. Nulla metus ligula, blandit et felis vel, aliquam varius leo.",
@@ -35,7 +35,7 @@
       "image": "images/example.jpg",
       "country": "Espagne",
       "categoryColor": "pink",
-      "category": "Histoire"
+      "category": "Langues"
     }
   ]
 }
