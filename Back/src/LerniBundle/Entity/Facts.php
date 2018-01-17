@@ -41,18 +41,16 @@ class Facts
     private $country;
 
     /**
-     * @ORM\ManyToMany(targetEntity="LerniBundle\Entity\Category", inversedBy="facts" ,  cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="LerniBundle\Entity\Category", inversedBy="facts" ,  cascade={"remove"})
      */
     private $categories;
 
-
     /**
-     * Constructor
+     * @ORM\Column(type="string", length=255)
      */
-    public function __construct()
-    {
-        $this->categories = new \Doctrine\Common\Collections\ArrayCollection();
-    }
+    private $picture;
+
+
 
     /**
      * Get id.
@@ -113,6 +111,30 @@ class Facts
     }
 
     /**
+     * Set picture.
+     *
+     * @param string $picture
+     *
+     * @return Facts
+     */
+    public function setPicture($picture)
+    {
+        $this->picture = $picture;
+
+        return $this;
+    }
+
+    /**
+     * Get picture.
+     *
+     * @return string
+     */
+    public function getPicture()
+    {
+        return $this->picture;
+    }
+
+    /**
      * Set country.
      *
      * @param \LerniBundle\Entity\Countries|null $country
@@ -137,35 +159,23 @@ class Facts
     }
 
     /**
-     * Add category.
+     * Set categories.
      *
-     * @param \LerniBundle\Entity\Category $category
+     * @param \LerniBundle\Entity\Category|null $categories
      *
      * @return Facts
      */
-    public function addCategory(\LerniBundle\Entity\Category $category)
+    public function setCategories(\LerniBundle\Entity\Category $categories = null)
     {
-        $this->categories[] = $category;
+        $this->categories = $categories;
 
         return $this;
     }
 
     /**
-     * Remove category.
-     *
-     * @param \LerniBundle\Entity\Category $category
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeCategory(\LerniBundle\Entity\Category $category)
-    {
-        return $this->categories->removeElement($category);
-    }
-
-    /**
      * Get categories.
      *
-     * @return \Doctrine\Common\Collections\Collection
+     * @return \LerniBundle\Entity\Category|null
      */
     public function getCategories()
     {

@@ -36,7 +36,7 @@ class Category
     private $color;
 
     /**
-     * @ORM\ManyToMany(targetEntity="LerniBundle\Entity\Facts", mappedBy="categories" , cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="LerniBundle\Entity\Facts", mappedBy="categories" , cascade={"remove"})
      */
     private $facts;
 

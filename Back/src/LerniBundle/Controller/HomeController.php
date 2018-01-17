@@ -51,7 +51,7 @@ class HomeController extends Controller
             array_push($tab["country"],
                 [
                     "id"    => $listes->getId(),
-                    "name"  => $listes->getName(),
+                    "name"  => $listes->getName()
                 ]
             );
         }
@@ -67,17 +67,26 @@ class HomeController extends Controller
         }
 
         foreach ($fact as $facts){
+            $id = null;
+            if($facts->getCategories() != null){
+            if($facts->getCategories()->getId() != null) {
+                $id = $facts->getCategories()->getId();
+            }
+            }
             array_push($tab["fact"],
                 [
-                    "id"          => $facts->getId(),
-                    "country_id"  => $facts->getCountry(),
-                    "description" => $facts->getDescription(),
-                    "interest"    => $facts->getInterest()
+                    "id"            => $facts->getId(),
+                    "country_id"    => $facts->getCountry()->getId(),
+                    "description"   => $facts->getDescription(),
+                    "interest"      => $facts->getInterest(),
+                    "categories_id" => $id,
                 ]
             );
+//            dump($id);
         }
+//        die;
 
-        $response = new JsonResponse(json_encode($tab));
+        $response = new JsonResponse(json_encode($tab, JSON_UNESCAPED_UNICODE));
 
 
         return $response ;
