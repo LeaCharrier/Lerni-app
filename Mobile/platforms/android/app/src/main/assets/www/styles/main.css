@@ -65,19 +65,47 @@ a {
 /*breakpoints*/
 /* fonts */
 /* colors */
+body {
+  height: 100vh; }
+
 .container {
   max-width: 550px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 70%; }
+  .container .next {
+    padding: 5%;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    background: #7655A0; }
+    .container .next:last-child {
+      background: #9D98A4; }
 
-@media only screen and (max-width: 550px) {
-  .card {
-    width: calc(100% - 60px);
-    margin: 0 auto; }
-    .card__img {
-      margin: 0 auto;
-      width: 50%; }
-      .card__img img {
-        width: 100%; } }
+.card {
+  width: 95%;
+  height: 100%;
+  background: #f4f4f4;
+  border-radius: 10px;
+  border-bottom: 4px solid #4A90E2;
+  margin: 20px auto; }
+  .card #fact {
+    margin: 10px 0;
+    padding: 2%;
+    height: 190px;
+    line-height: 130%; }
+  .card #country,
+  .card #category {
+    display: inline-block;
+    background: pink;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 0 2px; }
+  .card #card-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%; }
 
 .contain-swip {
   position: absolute;
@@ -87,6 +115,10 @@ a {
   background-color: white; }
   .contain-swip .slide p {
     color: #fff; }
+    .contain-swip .slide p span {
+      font-family: "lobster", arial, sans-serif;
+      font-size: 22px;
+      margin-left: 5px; }
   .contain-swip .slide .content p {
     font-family: "roboto", arial, sans-serif;
     font-size: 20px;
@@ -98,7 +130,7 @@ a {
       margin: -10px auto 0; }
     .contain-swip .slide .card-pointing .pointing {
       position: absolute;
-      width: 140px; }
+      width: 120px; }
   .contain-swip .slide-1 p {
     color: #000000; }
   .contain-swip .slide-1 .content {
@@ -112,10 +144,8 @@ a {
   .contain-swip .slide-2 {
     background-color: #7655A0; }
     .contain-swip .slide-2 .content .card-pointing .pointing {
-      position: absolute;
-      width: 140px;
       right: -20px;
-      top: 260px; }
+      top: 230px; }
     .contain-swip .slide-2 .content p {
       color: #fff;
       margin-bottom: 50px;
@@ -129,10 +159,8 @@ a {
   .contain-swip .slide-3 {
     background-color: #7655A0; }
     .contain-swip .slide-3 .content .card-pointing .pointing {
-      position: absolute;
-      width: 140px;
       right: -20px;
-      top: 225px; }
+      top: 195px; }
     .contain-swip .slide-3 .content p {
       color: #fff;
       max-width: 280px;
@@ -142,6 +170,45 @@ a {
         width: 60px;
         margin-top: 35px;
         margin-right: 4px; }
+  .contain-swip .slide-4 {
+    background-color: #7655A0; }
+    .contain-swip .slide-4 .content .card-pointing .pointing {
+      width: 110px;
+      right: -30px;
+      top: 340px; }
+    .contain-swip .slide-4 .content p {
+      color: #fff;
+      max-width: 300px;
+      margin: 60px auto 0; }
+      .contain-swip .slide-4 .content p img {
+        display: inline-block;
+        width: 60px;
+        margin-top: 35px;
+        margin-right: 4px; }
+  .contain-swip .slide-5 {
+    background-color: #7655A0; }
+    .contain-swip .slide-5 .content {
+      margin-top: 60%; }
+      .contain-swip .slide-5 .content .hand-thumb {
+        width: 70px;
+        margin: 0 auto 65px; }
+      .contain-swip .slide-5 .content .text-ready-title {
+        margin-bottom: 65px; }
+      .contain-swip .slide-5 .content .text-ready {
+        display: block;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        color: #7655A0;
+        font-family: "roboto", arial, sans-serif;
+        font-size: 20px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 10px 0; }
+        .contain-swip .slide-5 .content .text-ready span {
+          color: #7655A0;
+          font-family: "lobster", arial, sans-serif;
+          font-size: 24px; }
   .contain-swip .slick-slide {
     position: relative; }
   .contain-swip .title-help {

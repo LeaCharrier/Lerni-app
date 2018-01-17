@@ -8,7 +8,14 @@
   .slide {
     p {
       color: $white;
+
+      span {
+        font-family: $lobster;
+        font-size: 22px;
+        margin-left: 5px;
+      }
     }
+
     .content {
       p {
         font-family: $roboto;
@@ -25,7 +32,7 @@
       }
       .pointing {
         position: absolute;
-        width: 140px;
+        width: 120px;
       }
     }
 
@@ -51,10 +58,8 @@
       .content {
         .card-pointing {
           .pointing {
-            position:absolute;
-            width: 140px;
             right: -20px;
-            top: 260px;
+            top: 230px;
           }
         }
         p {
@@ -77,10 +82,8 @@
       .content {
         .card-pointing {
           .pointing {
-            position: absolute;
-            width: 140px;
             right: -20px;
-            top: 225px;
+            top: 195px;
           }
         }
         p {
@@ -92,6 +95,71 @@
             width: 60px;
             margin-top: 35px;
             margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    &-4 {
+      background-color: $darkViolet;
+
+      .content {
+
+        .card-pointing {
+
+          .pointing {
+            width: 110px;
+            right: -30px;
+            top: 340px;
+          }
+        }
+
+        p {
+          color: $white;
+          max-width: 300px;
+          margin: 60px auto 0;
+
+          img {
+            display: inline-block;
+            width: 60px;
+            margin-top: 35px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    &-5 {
+      background-color: $darkViolet;
+
+      .content {
+        margin-top: 60%;
+
+        .hand-thumb {
+          width: 70px;
+          margin: 0 auto 65px;
+        }
+
+        .text-ready-title {
+          margin-bottom: 65px;
+        }
+
+        .text-ready {
+          display: block;
+          width: calc(100% - 20px);
+          margin: 0 auto;
+          color: $darkViolet;
+          font-family: $roboto;
+          font-size: 20px;
+          background-color: $white;
+          text-align: center;
+          border-radius: 8px;
+          padding: 10px 0;
+
+          span {
+            color: $darkViolet;
+            font-family: $lobster;
+            font-size: 24px;
           }
         }
       }
