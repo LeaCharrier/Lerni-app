@@ -1,6 +1,11 @@
+.container-filter-hidden {
+  z-index: -1;
+}
+
 .filter {
   border-top: 1px solid $darkGrey;
   padding-top: 5px;
+
   .filter-slide {
     display: flex;
     flex-direction: column;

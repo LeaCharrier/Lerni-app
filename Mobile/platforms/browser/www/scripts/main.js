@@ -1,22 +1,23 @@
 var App = App || {};
 
 var newCard = new App.Card();
-newCard.init();
+// newCard.init();
 
 var next = document.querySelector('.next');
 var filter = document.querySelectorAll('.filter li');
 var appReady = document.querySelectorAll('.ready-app');
 var containSlider = document.querySelector('.contain-swip');
+var filter = document.querySelector('.filter');
 
 var helper = new App.Helper();
 
-// for (var i = 0; i < appReady.length; i++) {
-//     appReady[i].addEventListener('click', function () {
-//         console.log('e');
-//         containSlider.style.display='none';
-//         newCard.init();
-//     });
-// }
+for (var i = 0; i < appReady.length; i++) {
+    appReady[i].addEventListener('click', function () {
+        containSlider.style.display='none';
+        filter.classList.remove('container-filter-hidden');
+        newCard.init();
+    });
+}
 
 next.addEventListener('click', function () {
     newCard.init();

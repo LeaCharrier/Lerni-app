@@ -133,6 +133,10 @@ body {
     font-family: "roboto", arial, sans-serif;
     font-size: 18px;
     text-align: center; }
+    .contain-swip .slide .content p span {
+      font-family: "lobster", arial, sans-serif;
+      font-size: 20px;
+      margin-left: 5px; }
   .contain-swip .slide .skip-slider {
     display: block;
     z-index: 4;
@@ -155,13 +159,13 @@ body {
   .contain-swip .slide-1 p {
     color: #000000; }
   .contain-swip .slide-1 .content {
-    margin: 60% auto 0; }
+    margin: 50% auto 0; }
     .contain-swip .slide-1 .content img {
       display: block;
       margin: 0 auto; }
     .contain-swip .slide-1 .content p {
       max-width: 300px;
-      margin: 10px auto 0; }
+      margin: 20px auto 0; }
   .contain-swip .slide-2 {
     background-color: #7655A0; }
     .contain-swip .slide-2 .content .card-pointing .pointing {
@@ -235,6 +239,13 @@ body {
   .contain-swip .slick-list,
   .contain-swip .slick-track {
     height: 100%; }
+  .contain-swip #slick-slide-control00:before {
+    color: #000000; }
+  .contain-swip .slick-dots li.slick-active button:before {
+    color: #fff; }
+
+.container-filter-hidden {
+  z-index: -1; }
 
 .filter {
   border-top: 1px solid #9D98A4;
