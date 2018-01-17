@@ -1,0 +1,22 @@
+/* ==========================================================================
+  FONTS
+/* ========================================================================== */
+
+//LOBSTER
+
+@font-face {
+    font-family: 'lobster';
+    src: url('../font/lobster/lobster-webfont.woff2') format('woff2'),
+         url('../font/lobster/lobster-webfont.woff') format('woff');
+}
+
+
+
+//ROBOTO
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../font/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+}

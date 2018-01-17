@@ -1,0 +1,122 @@
+.contain-swip {
+  position: absolute;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  .slide {
+    p {
+      color: $white;
+    }
+    .content {
+      p {
+        font-family: $roboto;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    .card-pointing {
+      position:relative;
+      .card-slide {
+        width: 280px;
+        margin: -10px auto 0;
+      }
+      .pointing {
+        position: absolute;
+        width: 140px;
+      }
+    }
+
+    &-1 {
+      p {
+        color: $black;
+      }
+      .content {
+        margin: 60% auto 0;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+        p {
+          max-width: 260px;
+          margin: 40px auto 0;
+        }
+      }
+    }
+
+    &-2 {
+      background-color: #7655A0;
+      .content {
+        .card-pointing {
+          .pointing {
+            position:absolute;
+            width: 140px;
+            right: -20px;
+            top: 260px;
+          }
+        }
+        p {
+          color: $white;
+          margin-bottom: 50px;
+          max-width: 280px;
+          margin: 0 auto;
+          img {
+            display: inline-block;
+            width: 60px;
+            margin-top: 25px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    &-3 {
+      background-color: #7655A0;
+      .content {
+        .card-pointing {
+          .pointing {
+            position: absolute;
+            width: 140px;
+            right: -20px;
+            top: 225px;
+          }
+        }
+        p {
+          color: $white;
+          max-width: 280px;
+          margin: 60px auto 0;
+          img {
+            display: inline-block;
+            width: 60px;
+            margin-top: 35px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-slide {
+    position: relative;
+  }
+
+  .title-help {
+    font-family: $roboto;
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slick-dots {
+    bottom: 5px;
+  }
+
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+}

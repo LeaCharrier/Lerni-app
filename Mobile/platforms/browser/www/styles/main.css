@@ -1,0 +1,158 @@
+/* ==========================================================================
+  FONTS
+/* ========================================================================== */
+@font-face {
+  font-family: 'lobster';
+  src: url("../font/lobster/lobster-webfont.woff2") format("woff2"), url("../font/lobster/lobster-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../font/roboto/roboto-regular-webfont.woff2") format("woff2"), url("../font/roboto/roboto-regular-webfont.woff") format("woff");
+  font-weight: 400; }
+
+/* ==========================================================================
+    MIXINS
+/* ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+* {
+  outline: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+strong {
+  font-weight: 700; }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+/* ==========================================================================
+  VARIABLES
+/* ========================================================================== */
+/*breakpoints*/
+/* fonts */
+/* colors */
+.container {
+  max-width: 550px;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 550px) {
+  .card {
+    width: calc(100% - 60px);
+    margin: 0 auto; }
+    .card__img {
+      margin: 0 auto;
+      width: 50%; }
+      .card__img img {
+        width: 100%; } }
+
+.contain-swip {
+  position: absolute;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+  .contain-swip .slide p {
+    color: #fff; }
+  .contain-swip .slide .content p {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  .contain-swip .slide .card-pointing {
+    position: relative; }
+    .contain-swip .slide .card-pointing .card-slide {
+      width: 280px;
+      margin: -10px auto 0; }
+    .contain-swip .slide .card-pointing .pointing {
+      position: absolute;
+      width: 140px; }
+  .contain-swip .slide-1 p {
+    color: #000000; }
+  .contain-swip .slide-1 .content {
+    margin: 60% auto 0; }
+    .contain-swip .slide-1 .content img {
+      display: block;
+      margin: 0 auto; }
+    .contain-swip .slide-1 .content p {
+      max-width: 260px;
+      margin: 40px auto 0; }
+  .contain-swip .slide-2 {
+    background-color: #7655A0; }
+    .contain-swip .slide-2 .content .card-pointing .pointing {
+      position: absolute;
+      width: 140px;
+      right: -20px;
+      top: 260px; }
+    .contain-swip .slide-2 .content p {
+      color: #fff;
+      margin-bottom: 50px;
+      max-width: 280px;
+      margin: 0 auto; }
+      .contain-swip .slide-2 .content p img {
+        display: inline-block;
+        width: 60px;
+        margin-top: 25px;
+        margin-right: 4px; }
+  .contain-swip .slide-3 {
+    background-color: #7655A0; }
+    .contain-swip .slide-3 .content .card-pointing .pointing {
+      position: absolute;
+      width: 140px;
+      right: -20px;
+      top: 225px; }
+    .contain-swip .slide-3 .content p {
+      color: #fff;
+      max-width: 280px;
+      margin: 60px auto 0; }
+      .contain-swip .slide-3 .content p img {
+        display: inline-block;
+        width: 60px;
+        margin-top: 35px;
+        margin-right: 4px; }
+  .contain-swip .slick-slide {
+    position: relative; }
+  .contain-swip .title-help {
+    font-family: "roboto", arial, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .contain-swip .slick-dots {
+    bottom: 5px; }
+  .contain-swip .slick-list,
+  .contain-swip .slick-track {
+    height: 100%; }

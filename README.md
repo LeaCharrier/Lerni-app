@@ -1,1 +1,1 @@
-# Lerni-app
+# lerni
