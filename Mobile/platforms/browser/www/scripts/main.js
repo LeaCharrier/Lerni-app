@@ -1,7 +1,7 @@
 var App = App || {};
 
 var newCard = new App.Card();
-// newCard.init();
+newCard.init();
 
 var next = document.querySelector('.next');
 var filter = document.querySelectorAll('.filter li');
@@ -10,13 +10,13 @@ var containSlider = document.querySelector('.contain-swip');
 
 var helper = new App.Helper();
 
-for (var i = 0; i < appReady.length; i++) {
-    appReady[i].addEventListener('click', function () {
-        console.log('e');
-        containSlider.style.display='none';
-        newCard.init();
-    });
-}
+// for (var i = 0; i < appReady.length; i++) {
+//     appReady[i].addEventListener('click', function () {
+//         console.log('e');
+//         containSlider.style.display='none';
+//         newCard.init();
+//     });
+// }
 
 next.addEventListener('click', function () {
     newCard.init();
@@ -36,6 +36,14 @@ $(document).ready(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
+    arrows: false,
+  });
+
+  $('.filter').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
     arrows: false,
   });
 });

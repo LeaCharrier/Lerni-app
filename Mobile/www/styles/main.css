@@ -74,39 +74,52 @@ body {
   margin: 0 auto;
   height: 70%; }
   .container .next {
-    padding: 5%;
+    padding: 3%;
     width: 95%;
     margin: 10px auto;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
-    background: #7655A0; }
-    .container .next:last-child {
+    background: #7655A0;
+    color: #fff;
+    font-family: "lobster", arial, sans-serif; }
+    .container .next-grey {
       background: #9D98A4; }
+
+.logo {
+  width: 10%;
+  margin: 10px auto -10px;
+  display: block; }
 
 .card {
   width: 95%;
-  height: 100%;
+  max-height: 100%;
   background: #f4f4f4;
   border-radius: 10px;
   border-bottom: 4px solid #4A90E2;
-  margin: 20px auto; }
+  margin: 20px auto;
+  font-family: "roboto", arial, sans-serif;
+  padding-bottom: 10px; }
   .card #fact {
     margin: 10px 0;
-    padding: 2%;
-    height: 190px;
-    line-height: 130%; }
+    padding: 0 15px;
+    height: 140px;
+    line-height: 130%;
+    font-size: 18px;
+    overflow: scroll; }
   .card #country,
   .card #category {
     display: inline-block;
-    background: pink;
+    background: #D8D8D8;
     border-radius: 20px;
     padding: 2%;
-    margin: 0 2px; }
+    margin: 0 15px; }
   .card #card-img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width: 100%; }
+    width: 100%;
+    max-height: 170px;
+    object-fit: cover; }
 
 .contain-swip {
   position: absolute;
@@ -148,7 +161,7 @@ body {
       margin: 0 auto; }
     .contain-swip .slide-1 .content p {
       max-width: 300px;
-      margin: 90px auto 0; }
+      margin: 10px auto 0; }
   .contain-swip .slide-2 {
     background-color: #7655A0; }
     .contain-swip .slide-2 .content .card-pointing .pointing {
@@ -222,3 +235,27 @@ body {
   .contain-swip .slick-list,
   .contain-swip .slick-track {
     height: 100%; }
+
+.filter {
+  border-top: 1px solid #9D98A4;
+  padding-top: 5px; }
+  .filter .filter-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    .filter .filter-slide p {
+      font-family: "roboto", arial, sans-serif;
+      font-size: 15px; }
+    .filter .filter-slide.checked:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      right: -10px;
+      background-image: url("../images/check.png");
+      background-size: cover; }
+    .filter .filter-slide img {
+      height: 25px;
+      margin-bottom: 2px; }
