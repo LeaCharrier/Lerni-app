@@ -99,7 +99,8 @@ body {
   border-bottom: 4px solid #4A90E2;
   margin: 20px auto;
   font-family: "roboto", arial, sans-serif;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  transition: opacity 2s ease-in-out; }
   .card #fact {
     margin: 10px 0;
     padding: 0 15px;
