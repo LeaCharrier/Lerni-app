@@ -12,84 +12,103 @@
     <link rel="stylesheet" type="text/css" href="scripts/vendor/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="scripts/vendor/slick/slick-theme.css"/>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <title>Hello World</title>
     <link rel="stylesheet" href="styles/main.css">
   </head>
-      <body>
+  <body>
 
-        <div class="container">
+    <div class="container">
 
-          <div class="contain-swip">
-            
-            <div class="slide slide-1">
-              <div class="content">
-                <img src="images/logo.png">
-                <p>Apprenez et voyager autrement</p>
-              </div>
-              <p class="title-help">Fait glisser pour en savoir plus</p>
-            </div>
+      <div class="contain-swip">
 
-            <div class="slide slide-2">
-              <div class="content">
-                <div class="card-pointing">
-                  <img src="images/iPhone.png" class="card-slide">
-                  <img src="images/pointing.svg" class="pointing">
-                </div>
-                <p><img src="images/littlelogo.png">te propose un fact, réponds en décidant s'il est intéressant ou pas ! Si un fact est trop peu intéressant selon la communauté, il sera supprimé.</p>
-              </div>
-              <p class="title-help">Fait glisser pour en savoir plus</p>
-            </div>
-
-
-            <div class="slide slide-3">
-              <div class="content">
-                <div class="card-pointing">
-                  <img src="images/iPhone.png" class="card-slide">
-                  <img src="images/pointing.svg" class="pointing">
-                </div>
-                <p>La couleur de la carte te permet de savoir sur quel thème porte le fact !</p>
-              </div>
-              <p class="title-help">Fait glisser pour en savoir plus</p>
-            </div>
-
-
-            <div class="slide slide-4">
-              <div>
-                <img src="images/thumb.png" class="hand-thumb">
-                <p>Prêt ?</p>
-                <p>Lancer Lerni</p>
-              </div>
-              <p class="title-help">Fait glisser pour en savoir plus</p>
-            </div>
+        <div class="slide slide-1">
+          <div class="content">
+            <img src="images/logo.png">
+            <p>Apprenez et voyager autrement</p>
           </div>
-
-
-
-          <ul class="filter">
-            <li style="background: deepskyblue; display: inline-block;" data-country="france">France</li>
-            <li style="background: deepskyblue; display: inline-block;" data-country="italie">Italie</li>
-            <li style="background: deepskyblue; display: inline-block;" data-country="allemagne">Allemagne</li>
-            <li style="background: deepskyblue; display: inline-block;" data-country="espagne">Espagne</li>
-          </ul>
-
-          <h1>Card</h1>
-          
-          <div class="card">
-
-          </div>
-          <span id="next" style="padding: 2%; background: pink; display:inline-block; margin-top: 30px">OK</span>
+          <p class="skip-slider ready-app">Skip</p>
         </div>
-      </body>
-    <footer>
-    </footer>
 
-    <!-- build:js scripts/main.js -->
+        <div class="slide slide-2">
+          <div class="content">
+            <div class="card-pointing">
+              <img src="images/page5.png" class="card-slide">
+              <img src="images/pointing.svg" class="pointing">
+            </div>
+            <p><img src="images/littlelogo.png">te propose un <span>fact</span>, et tu lui donnes ton avis !</p>
+          </div>
+          <p class="skip-slider ready-app">Skip</p>
+        </div>
+
+
+        <div class="slide slide-3">
+          <div class="content">
+            <div class="card-pointing">
+              <img src="images/page5.png" class="card-slide">
+              <img src="images/pointing.svg" class="pointing">
+            </div>
+            <p>La couleur de la carte te permet de savoir sur quel thème porte le <span>fact</span> !</p>
+          </div>
+          <p class="skip-slider ready-app">Skip</p>
+        </div>
+
+        <div class="slide slide-4">
+          <div class="content">
+            <div class="card-pointing">
+              <img src="images/page5.png" class="card-slide">
+              <img src="images/pointing.svg" class="pointing">
+            </div>
+            <p>Choisi la thématique qui te plait en slidant la barre des thèmes !</p>
+          </div>
+          <p class="skip-slider ready-app">Skip</p>
+        </div>
+
+
+        <div class="slide slide-5">
+          <div class="content">
+            <img src="images/thumb.svg" class="hand-thumb">
+            <p class="text-ready-title">Prêt ?</p>
+            <p class="text-ready ready-app ">Lancer <span>Lerni</span></p>
+          </div>
+          <p class="skip-slider ready-app">Skip</p>
+        </div>
+      </div>
+
+    <img src="images/logo.png" class="logo">
+    <div class="card">
+
+      <!-- RENVOI DONNE JS -->
+    </div>
+
+    <div class="next">Intéressant !</div>
+    <div class="next next-grey" >Mouais...</div>
+    
+    <div class="filter container-filter-hidden">
+      <div class="filter-slide" data-category="2" >
+        <img src="images/burger.png">
+        <p>Gastronomie</p>
+      </div>
+      <div class="filter-slide" data-category="1">
+        <img src="images/stats.png">
+        <p>Stats</p>
+      </div>
+      <div class="filter-slide" data-category="3">
+        <img src="images/langues.png">
+        <p>Culture</p>
+      </div>
+      <div class="filter-slide" data-category="4">
+        <img src="images/culture.png">
+        <p>Coutume</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
   <script src="cordova.js"></script>
   <script type="text/javascript" src="scripts/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/vendor/slick/slick.min.js"></script>
   <script type="text/javascript" src="scripts/helper.js"></script>
   <script type="text/javascript" src="scripts/card.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
-    <!-- endbuild -->
   </body>
 </html>

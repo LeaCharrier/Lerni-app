@@ -1,4 +1,32 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+}
 .container {
 	max-width: 550px;
 	margin: 0 auto;
+	height: 70%;
+
+	.next {
+		padding: 3%;
+		width: 95%;
+		margin: 10px auto;
+		border-radius: 5px;
+		font-size: 26px;
+		text-align: center;
+		background: $darkViolet;
+		color: $white;
+		font-family: $lobster;
+
+		&-grey {
+			background: $darkGrey;
+		}
+	}
+
+}
+
+.logo {
+	width: 10%;
+    margin: 10px auto -10px;
+    display: block;
 }

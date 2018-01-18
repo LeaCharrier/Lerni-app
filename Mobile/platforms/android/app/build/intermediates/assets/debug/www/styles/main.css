@@ -65,19 +65,71 @@ a {
 /*breakpoints*/
 /* fonts */
 /* colors */
+body {
+  height: 100vh;
+  overflow: hidden; }
+
 .container {
   max-width: 550px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 70%; }
+  .container .next {
+    padding: 3%;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 26px;
+    text-align: center;
+    background: #7655A0;
+    color: #fff;
+    font-family: "lobster", arial, sans-serif; }
+    .container .next-grey {
+      background: #9D98A4; }
 
-@media only screen and (max-width: 550px) {
-  .card {
-    width: calc(100% - 60px);
-    margin: 0 auto; }
-    .card__img {
-      margin: 0 auto;
-      width: 50%; }
-      .card__img img {
-        width: 100%; } }
+.logo {
+  width: 10%;
+  margin: 10px auto -10px;
+  display: block; }
+
+.card {
+  width: 95%;
+  max-height: 100%;
+  background: #f4f4f4;
+  border-radius: 10px;
+  border-bottom: 4px solid #4A90E2;
+  margin: 20px auto;
+  font-family: "roboto", arial, sans-serif;
+  padding-bottom: 10px;
+  transition: opacity 2s ease-in-out; }
+  .card #card-ui {
+    animation: fade 1s; }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .card #fact {
+    margin: 10px 0;
+    padding: 0 15px;
+    height: 100px;
+    line-height: 130%;
+    font-size: 18px;
+    overflow: scroll; }
+  .card #country,
+  .card #category {
+    display: inline-block;
+    background: #D8D8D8;
+    border-radius: 20px;
+    padding: 2%; }
+  .card #country {
+    margin: 0 15px; }
+  .card #card-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 170px;
+    object-fit: cover; }
 
 .contain-swip {
   position: absolute;
@@ -89,8 +141,21 @@ a {
     color: #fff; }
   .contain-swip .slide .content p {
     font-family: "roboto", arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center; }
+    .contain-swip .slide .content p span {
+      font-family: "lobster", arial, sans-serif;
+      font-size: 20px;
+      margin-left: 5px; }
+  .contain-swip .slide .skip-slider {
+    display: block;
+    z-index: 4;
+    font-family: "roboto", arial, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #fff; }
   .contain-swip .slide .card-pointing {
     position: relative; }
     .contain-swip .slide .card-pointing .card-slide {
@@ -99,60 +164,120 @@ a {
     .contain-swip .slide .card-pointing .pointing {
       position: absolute;
       width: 140px; }
+  .contain-swip .slide-1 .skip-slider {
+    color: #7655A0; }
   .contain-swip .slide-1 p {
     color: #000000; }
   .contain-swip .slide-1 .content {
-    margin: 60% auto 0; }
+    margin: 50% auto 0; }
     .contain-swip .slide-1 .content img {
       display: block;
       margin: 0 auto; }
     .contain-swip .slide-1 .content p {
-      max-width: 260px;
-      margin: 40px auto 0; }
+      max-width: 300px;
+      margin: 20px auto 0; }
   .contain-swip .slide-2 {
     background-color: #7655A0; }
     .contain-swip .slide-2 .content .card-pointing .pointing {
-      position: absolute;
-      width: 140px;
       right: -20px;
-      top: 260px; }
+      top: 230px; }
     .contain-swip .slide-2 .content p {
       color: #fff;
       margin-bottom: 50px;
-      max-width: 280px;
-      margin: 0 auto; }
+      max-width: 250px;
+      margin: 70px auto 0; }
       .contain-swip .slide-2 .content p img {
         display: inline-block;
         width: 60px;
-        margin-top: 25px;
         margin-right: 4px; }
   .contain-swip .slide-3 {
     background-color: #7655A0; }
     .contain-swip .slide-3 .content .card-pointing .pointing {
-      position: absolute;
-      width: 140px;
       right: -20px;
-      top: 225px; }
+      top: 195px; }
     .contain-swip .slide-3 .content p {
       color: #fff;
-      max-width: 280px;
-      margin: 60px auto 0; }
+      max-width: 300px;
+      margin: 90px auto 0; }
       .contain-swip .slide-3 .content p img {
         display: inline-block;
         width: 60px;
         margin-top: 35px;
         margin-right: 4px; }
+  .contain-swip .slide-4 {
+    background-color: #7655A0; }
+    .contain-swip .slide-4 .content .card-pointing .pointing {
+      width: 120px;
+      right: -20px;
+      top: 335px; }
+    .contain-swip .slide-4 .content p {
+      color: #fff;
+      max-width: 300px;
+      margin: 90px auto 0; }
+      .contain-swip .slide-4 .content p img {
+        display: inline-block;
+        width: 60px;
+        margin-top: 35px;
+        margin-right: 4px; }
+  .contain-swip .slide-5 {
+    background-color: #7655A0; }
+    .contain-swip .slide-5 .content {
+      margin-top: 60%; }
+      .contain-swip .slide-5 .content .hand-thumb {
+        width: 70px;
+        margin: 0 auto 65px; }
+      .contain-swip .slide-5 .content .text-ready-title {
+        margin-bottom: 65px; }
+      .contain-swip .slide-5 .content .text-ready {
+        display: block;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        color: #7655A0;
+        font-family: "roboto", arial, sans-serif;
+        font-size: 20px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 10px 0; }
   .contain-swip .slick-slide {
     position: relative; }
-  .contain-swip .title-help {
-    font-family: "roboto", arial, sans-serif;
-    font-size: 12px;
-    position: absolute;
+  .contain-swip .slick-dots {
     bottom: 30px;
+    width: 50%;
     left: 50%;
     transform: translateX(-50%); }
-  .contain-swip .slick-dots {
-    bottom: 5px; }
   .contain-swip .slick-list,
   .contain-swip .slick-track {
     height: 100%; }
+  .contain-swip #slick-slide-control00:before {
+    color: #000000; }
+  .contain-swip .slick-dots li.slick-active button:before {
+    color: #fff; }
+
+.container-filter-hidden {
+  z-index: -1; }
+
+.filter {
+  border-top: 1px solid #9D98A4;
+  padding-top: 5px; }
+  .filter .filter-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    .filter .filter-slide p {
+      font-family: "roboto", arial, sans-serif;
+      font-size: 15px;
+      position: relative; }
+    .filter .filter-slide.checked p:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: -4px;
+      right: -25px;
+      background-image: url("../images/check.png");
+      background-size: cover; }
+    .filter .filter-slide img {
+      height: 25px;
+      margin-bottom: 2px; }

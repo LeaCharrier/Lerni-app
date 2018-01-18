@@ -1,26 +1,157 @@
 {
-     "cards":
-     [
-         {
-             "fact": "Lalalaalala",
-             "country": "France",
-             "category": "Coutumes"
-
-         },
-         {
-           "fact": "haahtropdrole",
-           "country": "Allemagne",
-           "category": "Histoire"
-         },
-         {
-           "fact": "Héhéé",
-           "country": "Italie",
-           "category": "Histoire"
-         },
-         {
-           "fact": "Hahacdjfjff",
-           "country": "Espagne",
-           "category": "Législation"
-         }
-     ]
- }
+  "cards":
+  [
+    {
+      "fact": "L’Afrique est le second plus gros continent du monde.",
+      "image": "images/afrique.png",
+      "country": "Afrique",
+      "category": "Culture",
+      "category_color": "#F5A623",
+      "category_id": "3"
+    },
+    {
+      "fact": "Il y a 54 pays en Afrique.",
+      "image": "images/afrique.png",
+      "country": "Afrique",
+      "category": "Stats",
+      "category_color": "#F8EC5C",
+      "category_id": "1"
+    },
+    {
+      "fact": "L’Afrique est surnommée la “Rainbow Nation” car elle a 11 langues officielles. Un tiers des langues mondiales sont parlés en Afrique.",
+      "image": "images/languages.jpg",
+      "country": "Afrique",
+      "category": "Stats",
+      "category_color": "#F8EC5C",
+      "category_id": "1"
+    },
+    {
+      "fact": "1 adulte sur 4 est infecté par le VIH en Swaziland",
+      "image": "images/maladie.jpg",
+      "country": "Afrique",
+      "category": "Stats",
+      "category_color": "#F8EC5C",
+      "category_id": "1"
+    },
+    {
+      "fact": "Le Nigeria compte le plus grand taux de naissance de jumeaux.",
+      "image": "images/naissance.jpg",
+      "country": "Afrique",
+      "category": "Stats",
+      "category_color": "#F8EC5C",
+      "category_id": "1"
+    },
+    {
+      "fact": "Le Soudan compte plus de 200 pyramides, c’est plus qu’il n’y a en Egypte.",
+      "image": "images/pyramide.jpg",
+      "country": "Afrique",
+      "category": "Culture",
+      "category_color": "#F5A623",
+      "category_id": "3"
+    },
+    {
+      "fact": "Si vous avez $10 sans aucune dette, vous êtes plus riche qu’un quart des américains.",
+      "image": "images/dollars-1.jpg",
+      "country": "Amérique",
+      "category": "Stats",
+      "category_color": "#F8EC5C",
+      "category_id": "1"
+    },
+    {
+      "fact": "En 1867, l’Amérique a racheté l’Alaska pour seulement 72 millions de dollars.",
+      "image": "images/antartic.jpg",
+      "country": "Amérique",
+      "category": "Culture",
+      "category_color": "#F5A623",
+      "category_id": "2"
+    },
+    {
+      "fact": "La société Apple est plus riche que la trésorerie américaine.",
+      "image": "images/dollars-1.jpg",
+      "country": "Amérique",
+      "category": "Stats",
+      "category_color": "#F8EC5C",
+      "category_id": "1"
+    },
+    {
+      "fact": "Les U.S.A. n’ont pas de langue officielle.",
+      "image": "images/languages.jpg",
+      "country": "Amérique",
+      "category": "Culture",
+      "category_color": "#F5A623",
+      "category_id": "3"
+    },
+    {
+      "fact": "En Amérique, la St Valentin est également la journée nationale des préservatifs.",
+      "image": "images/images-4.jpg",
+      "country": "Amérique",
+      "category": "Coutume",
+      "category_color": "#6B9738",
+      "category_id": "4"
+    },
+    {
+      "fact": "En Amérique, la St Valentin est également la journée nationale des préservatifs.",
+      "image": "images/images-4.jpg",
+      "country": "Amérique",
+      "category": "Coutume",
+      "category_color": "#6B9738",
+      "category_id": "4"
+    },
+    {
+      "fact": "Les U.S.A. compte le plus grand nombre de divorce dans le monde.",
+      "image": "images/images-5.jpg",
+      "country": "Amérique",
+      "category": "Stats",
+      "category_color": "#F8EC5C",
+      "category_id": "1"
+    },
+    {
+      "fact": "Il existe en Antarctique un glacier qui déverse régulièrement du liquide rouge donnant l’impression que la glace seigne. Il est appelé “Blood Fall”.",
+      "image": "images/images-7.jpg",
+      "country": "Antarctique",
+      "category": "Culture",
+      "category_color": "#F5A623",
+      "category_id": "3"
+    },
+    {
+      "fact": "Il existe un distributeur automatique de billets en Antarctique.",
+      "image": "images/dollars-1.jpg",
+      "country": "Antarctique",
+      "category": "Culture",
+      "category_color": "#F5A623",
+      "category_id": "3"
+    },
+    {
+      "fact": "Au Maroc, il faut demander une carafe d'eau au risque de devoir payer la bouteille d'eau servie !",
+      "image": "images/eau.jpeg",
+      "country": "Afrique",
+      "category": "Culture",
+      "category_color": "#F5A623",
+      "category_id": "3"
+    },
+    {
+      "fact": "En Italie, manger sur place dans un restaurant implique de payer ses couverts.",
+      "image": "images/table.jpeg",
+      "country": "Europe",
+      "category": "Gastronomie",
+      "category_color": "#D0021B",
+      "category_id": "2"
+    },
+    {
+      "fact": "Les horaires des repas sont très différents de ceux des Français. Le déjeuner est souvent servi après 14h ou 15h et le diner, rarement avant 22h.",
+      "image": "images/paella.jpeg",
+      "country": "Europe",
+      "category": "Gastronomie",
+      "category_color": "#D0021B",
+      "category_id": "2"
+    },
+    {
+      "fact": "L’animal officiel de l’Ecosse est la licorne.",
+      "image": "images/licorne.jpg",
+      "country": "Europe",
+      "category": "Coutume",
+      "category_color": "#6B9738",
+      "category_id": "4"
+    }
+  ]
+}

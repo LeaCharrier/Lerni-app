@@ -101,6 +101,14 @@ body {
   font-family: "roboto", arial, sans-serif;
   padding-bottom: 10px;
   transition: opacity 2s ease-in-out; }
+  .card #card-ui {
+    animation: fade 1s; }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .card #fact {
     margin: 10px 0;
     padding: 0 15px;
@@ -113,13 +121,14 @@ body {
     display: inline-block;
     background: #D8D8D8;
     border-radius: 20px;
-    padding: 2%;
+    padding: 2%; }
+  .card #country {
     margin: 0 15px; }
   .card #card-img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
-    max-height: 170px;
+    height: 170px;
     object-fit: cover; }
 
 .contain-swip {
@@ -245,9 +254,6 @@ body {
   .contain-swip .slick-dots li.slick-active button:before {
     color: #fff; }
 
-.container-filter-hidden {
-  z-index: -1; }
-
 .filter {
   border-top: 1px solid #9D98A4;
   padding-top: 5px; }
@@ -258,14 +264,15 @@ body {
     position: relative; }
     .filter .filter-slide p {
       font-family: "roboto", arial, sans-serif;
-      font-size: 15px; }
-    .filter .filter-slide.checked:after {
+      font-size: 15px;
+      position: relative; }
+    .filter .filter-slide.checked p:after {
       content: '';
       position: absolute;
       width: 20px;
       height: 20px;
-      top: 20px;
-      right: -10px;
+      top: -4px;
+      right: -25px;
       background-image: url("../images/check.png");
       background-size: cover; }
     .filter .filter-slide img {

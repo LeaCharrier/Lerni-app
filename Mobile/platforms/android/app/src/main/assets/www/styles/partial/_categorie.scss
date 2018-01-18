@@ -15,16 +15,17 @@
     p {
       font-family: $roboto;
       font-size: 15px;
+      position:relative;
     }
 
     &.checked {
-      &:after  {
+      p:after  {
         content:'';
         position: absolute;
         width: 20px;
         height: 20px;
-        top: 20px;
-        right: -10px;
+        top: -4px;
+        right: -25px;
         background-image: url('../images/check.png');
         background-size: cover;
       }

@@ -15,9 +15,14 @@ function createCard(helper) {
     renderCardContent(helper, function(data) {
         var dataCountry = data.country;
         var dataCategory = data.category;
-        var dataCategoryColor = data.categoryColor;
+        var dataCategoryColor = data.category_color;
         var dataFact = data.fact;
         var dataImg = data.image;
+
+        renderCardUi();
+
+        var cardUi = document.querySelector('#card-ui');
+        cardUi.classList.add('transition');
 
         renderFigure();
         renderFact();
@@ -26,29 +31,35 @@ function createCard(helper) {
 
         container.style.borderBottom = dataCategoryColor + ' solid 5px';
 
+
+        function renderCardUi() {
+            var cardUi = helper.generateUniqueElement('div', 'card-ui');
+            container.appendChild(cardUi);
+        }
+
         function renderCountry() {
             var country = helper.generateUniqueElement('span', 'country');
             country.innerHTML= dataCountry;
-            container.appendChild(country);
+            cardUi.appendChild(country);
         }
 
         function renderCategory() {
             var category = helper.generateUniqueElement('span', 'category');
             category.style.background = dataCategoryColor;
             category.innerHTML= dataCategory;
-            container.appendChild(category);
+            cardUi.appendChild(category);
         }
 
         function renderFact() {
             var fact = helper.generateUniqueElement('p', 'fact');
             fact.innerHTML= dataFact;
-            container.appendChild(fact);
+            cardUi.appendChild(fact);
         }
 
         function renderFigure() {
             var img = helper.generateUniqueElement('img', 'card-img');
             img.setAttribute('src', dataImg);
-            container.appendChild(img);
+            cardUi.appendChild(img);
         }
 
     });
@@ -82,7 +93,7 @@ function filterData(helper, globalData) {
 
         for(i = 0 ; i < filter.length ; i++) {
             for(j = 0 ; j < globalData.length ; j++) {
-                if(filter[i] === globalData[j].category.toLowerCase()) {
+                if(filter[i] === globalData[j].category_id) {
                     data.push(globalData[j]);
                 }
             }
